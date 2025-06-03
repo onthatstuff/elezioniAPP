@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editTextEmailAddress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E7D78">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:background="#f2f9e8"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="AUTH\nTOKEN"
+                android:textColor="#3E7D78"
+                android:shadowColor="#80000000"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="2"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="Controlla la tua e-mail istituzionale, inserisci il Token che ti è stato inviato"
+                android:textColor="#3E7D78"
+                android:shadowColor="#80000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="285dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="#b2d4af"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <EditText
+                    android:id="@+id/textInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="Token"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="#3E7D78"
+                    android:textColorHint="#3E7D78"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="281dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="16dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/buttonSendToken"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Invia Token"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#3E7D78"
+                    app:cornerRadius="12dp" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
